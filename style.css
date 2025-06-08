@@ -1,0 +1,238 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #081b31;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+  display: block;
+  width: 100%;
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #07305e;
+  height: 80px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav ul li a:hover {
+  color: rgb(158, 158, 244);
+  font-size: 1.2rem;
+}
+.left {
+  font-size: 1.5rem;
+}
+
+/* firstsection for introduction */
+
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+}
+.firstsection > div {
+  width: 30%;
+}
+.leftsection {
+  font-size: 3rem;
+  margin: 70px 0;
+}
+.rightsection img {
+  width: 80%;
+  border-radius: 20%;
+  border: 2.5px solid white;
+}
+.purple {
+  color: rgb(154, 154, 236);
+}
+#element {
+  color: rgb(154, 154, 236);
+}
+
+/* some space */
+
+main hr {
+  border: 0;
+  height: 2px;
+  background-color: #07305e;
+  margin: 30px 84px;
+}
+
+/* secondsection my profession */
+
+.secondsection {
+  height: 90vh;
+}
+.text-gray {
+  padding: 0 100px;
+  color: rgb(176, 170, 170);
+}
+.secondsection h1 {
+  font-size: 1.9rem;
+  padding: 0 100px;
+}
+.secondsection .title {
+  margin: 50px 95px;
+  font-size: 2.5rem;
+  width: 100%;
+}
+.hobby {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+}
+.hobby .desc {
+  position: relative;
+  width: 40%;
+  font-size: 25px;
+  color: rgb(154, 154, 236);
+}
+.dev-img {
+  width: 40%;
+}
+.dev-img img {
+  width: 80%;
+  border: 1.5px solid white;
+}
+.dev-img img p {
+  color: #fff;
+}
+
+/* Thirdsection work experience */
+
+.thirdsection h1 {
+  font-size: 1.9rem;
+  padding: 0 100px;
+}
+.thirdsection .box {
+  background-color: #fff;
+  width: 77vw;
+  height: 2px;
+  margin: 56px 99px;
+  display: flex;
+  justify-content: space-between;
+}
+.thirdsection .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: #fff;
+  margin: 0 120px;
+}
+.image-top {
+  position: relative;
+  width: 40px;
+  top: -43px;
+  left: -18px;
+}
+.vertical-title {
+  position: relative;
+  width: 181px;
+  top: 40px;
+  font-size: 23px;
+}
+.vertical-desc {
+  position: relative;
+  top: 70px;
+  font-size: 15px;
+  width: 150px;
+  color: rgb(154, 154, 236);
+}
+
+/* for footer height */
+
+.secondsection,
+.thirdsection {
+  min-height: 100vh; /* This makes each section at least full screen height */
+}
+
+/* footer */
+
+footer {
+  background-color: #07305e;
+  color: white;
+  padding: 40px 100px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-first h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(154, 154, 236);
+}
+
+.footer-second {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-second img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.footer-second img:hover {
+  transform: scale(1.2);
+}
+
+.footer-third p {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* for responsive website */
+
+@media (max-width: 600px) {
+  footer {
+    padding: 30px 20px;
+  }
+
+  .footer-second img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-first h2 {
+    font-size: 20px;
+  }
+
+  .footer-third p {
+    font-size: 12px;
+  }
+}
